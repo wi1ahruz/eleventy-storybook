@@ -4,10 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run eleventy",
+    "eleventy": "eleventy --serve --quiet --incremental",
+    "format": "prettier --write 'src/' 'dist/**/*.{js,html}'"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "prettier": "^3.7.4",
+    "prettier-plugin-jinja-template": "^2.1.0"
+  }
 }
