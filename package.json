@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run eleventy",
+    "dev": "npm run css & npm run eleventy",
     "eleventy": "eleventy --serve --quiet --incremental",
+    "css": "postcss src/styles.css --output dist/styles.css --watch",
     "format": "prettier --write 'src/' 'dist/**/*.{js,html}'"
   },
   "keywords": [],
@@ -14,7 +15,12 @@
   "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/postcss": "^4.1.18",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "prettier": "^3.7.4",
-    "prettier-plugin-jinja-template": "^2.1.0"
+    "prettier-plugin-jinja-template": "^2.1.0",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.1.18"
   }
 }
