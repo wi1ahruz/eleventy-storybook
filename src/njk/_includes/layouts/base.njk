@@ -8,6 +8,7 @@
     {% renderlayoutblock 'css' -%}
   </head>
   <body>
-    {{ content | safe }}
+    {{ content | safe -}}
+    {% renderlayoutblock 'script' -%}
   </body>
 </html>

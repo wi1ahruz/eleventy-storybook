@@ -7,6 +7,7 @@
     "dev": "npm run css & npm run eleventy",
     "eleventy": "eleventy --serve --quiet --incremental",
     "css": "postcss src/styles.css --output dist/styles.css --watch",
+    "lint": "eslint 'dist/**/*.js'",
     "format": "prettier --write 'src/' 'dist/**/*.{js,html}'"
   },
   "keywords": [],
@@ -15,7 +16,11 @@
   "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
+    "@eslint/js": "^9.39.2",
     "@tailwindcss/postcss": "^4.1.18",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.0.0",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "prettier": "^3.7.4",

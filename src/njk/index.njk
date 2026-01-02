@@ -3,4 +3,8 @@ layout: layouts/base.njk
 title: Hello World!
 ---
 
+{% layoutblock 'script' -%}
+  <script src="./script.js"></script>
+{% endlayoutblock -%}
+
 <h1 class="font-bold">{{ title }}</h1>
