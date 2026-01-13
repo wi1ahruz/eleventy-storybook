@@ -1,3 +1,4 @@
 {
-  "prettier.documentSelectors": ["**/*.njk"]
+  "prettier.documentSelectors": ["**/*.njk"],
+  "files.associations": { "*.css": "tailwindcss" }
 }
